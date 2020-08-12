@@ -37,7 +37,6 @@ public class SpeechManager : MonoBehaviour
         triggeredStar = star;
         // Add the name of current star object with the corresponding function "ObjectCalled" 
         keywordActions.Add(starName, ObjectCalled);
-        Debug.Log("The name of this star is ..." + starName);
         // Assign the keywordRecognizer variable and set the confidence level to "low". A low confidence level means the speech does not have to be so accurate. This is very useful considering we will be dealing with aphasia patients. 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray(), ConfidenceLevel.Low);
         keywordRecognizer.OnPhraseRecognized += OnPhraseRecognized;
