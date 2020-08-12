@@ -30,6 +30,7 @@ This folder contains the scripts which can save the user's current data within t
 The *PlayerData* script simply defines the structure of a PlayerData object which will be used to store the user's player data, i.e., the level they are currently on, their position, tasks completed, whenever they complete a task (autosave) or choose to save their progress via the pause menu. 
 
 **Other**
+
 This folder contains other scripts for controlling the behaviour of the game. The *AutoSave* script will play an animation indicating to the user that the game is saving whenever they complete a task.
 
 The *LastScene* script is solely responsible for the buttons in the last scene of the game (the level which informs the user they have completed all levels). 
@@ -39,9 +40,11 @@ The *StartGame* script determines whether the user requested to start a new game
 The *Waypoints* script is used to display the remaining distance between the user and all collectables within a level. 
 
 **ScoreSystem**
+
 The *ScoreSystem* script controls the behaviour for whenever a user completes a certain task. It contains the functions to increment the score whenever the user completes a task. It also contains the logic required to determine whether to load the user's saved score if they were to load an existing game or reset it back to zero. 
 
 **SpeechManager**
+
 The *SpeechManager* script is what controls the speech-recognition aspect of the game. Whenever a user approaches a collectable, and proceeds with the dialogue until they reach the end, speech-recognition is enabled waiting for the user's verbal input. 
 
 
