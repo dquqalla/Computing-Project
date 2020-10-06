@@ -1,4 +1,6 @@
 # Computing-Project
+**Blog: https://dquqa001.wordpress.com/**
+
 Repository of my third-year Computer Science dissertation project, "Speech Therapy Game for Childhood Apraxia of Speech". 
 
 Here you can find all the scripts that was used for my project. These scripts have been fully commented to explain their purpose. 
