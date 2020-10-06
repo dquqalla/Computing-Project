@@ -1,9 +1,7 @@
 # Computing-Project
-IS53007D Computing Project 19-20
-
 Repository of my third-year Computer Science dissertation project, "Speech Therapy Game for Childhood Apraxia of Speech". 
 
-Here you can find all the scripts that will be used in my game. These scripts have been fully commented to explain their purpose. 
+Here you can find all the scripts that was used for my project. These scripts have been fully commented to explain their purpose. 
 
 Whilst the majority of the code has been self-written, I have used a few online resources such as Unity's documentation and YouTube tutorials to guide me. These resources have been credited in the comments. I could not thank them enough for sharing their knowledge and expertise. 
 
