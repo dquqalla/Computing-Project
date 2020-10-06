@@ -19,6 +19,8 @@ This folder contains the scripts that will display the on-screen dialogue to the
 
 When a user triggers a collectable, the string array containing the sentences is passed to the *DialogueManager* script which contains the functions required to display the text on the user's screen and call the SpeechManager script at the end of the dialogue. 
 
+The *SpeechManager* script is what controls the speech-recognition aspect of the game. Whenever a user approaches a collectable, and proceeds with the dialogue until they reach the end, speech-recognition is enabled waiting for the user's verbal input. 
+
 **Menus**
 
 This folder contains the scripts responsible for the functions for each menu, i.e., start menu, level select menu, settings menu, and the pause menu. These scripts contain methods to start a new game, save the current game, quit the game, and change settings of the game such as graphics and resolution. 
@@ -39,13 +41,10 @@ The *StartGame* script determines whether the user requested to start a new game
 
 The *Waypoints* script is used to display the remaining distance between the user and all collectables within a level. 
 
-**ScoreSystem**
+**Score System**
 
 The *ScoreSystem* script controls the behaviour for whenever a user completes a certain task. It contains the functions to increment the score whenever the user completes a task. It also contains the logic required to determine whether to load the user's saved score if they were to load an existing game or reset it back to zero. 
 
-**SpeechManager**
-
-The *SpeechManager* script is what controls the speech-recognition aspect of the game. Whenever a user approaches a collectable, and proceeds with the dialogue until they reach the end, speech-recognition is enabled waiting for the user's verbal input. 
 
 
 
