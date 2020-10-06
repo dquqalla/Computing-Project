@@ -1,4 +1,4 @@
-# Computing-Project
+# Dissertation Project
 **Blog: https://dquqa001.wordpress.com/**
 
 Repository of my third-year Computer Science dissertation project, "Speech Therapy Game for Childhood Apraxia of Speech". 
