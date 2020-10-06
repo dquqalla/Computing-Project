@@ -14,7 +14,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject settingsMenu;
     public GameObject quitMenu;
 
-    // Store GUI GameObjects
+    // Store GUI Game Objects
     public GameObject waypoints;
     public GameObject scoreUI;
     public GameObject levelComplete;
@@ -26,8 +26,8 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // If user clicks "Esc"...
-        if (Input.GetKeyDown(KeyCode.Escape))
+        // If user clicks "Esc" or "P" keys...
+        if (Input.GetKeyDown(KeyCode.Escape) | Input.GetKeyDown(KeyCode.P))
         {
             // If game is paused, resume game, else pause it
             if(gamePaused)
@@ -47,10 +47,12 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         settingsMenu.SetActive(false);
         quitMenu.SetActive(false);
+        Cursor.visible = false;
 
         // Enable waypoints/score system UI
         waypoints.SetActive(true);
         scoreUI.SetActive(true);
+        
 
         if(FindObjectOfType<ScoreSystem>().levelDone == 1)
         {
@@ -70,6 +72,7 @@ public class PauseMenu : MonoBehaviour
     {
         // Enable pause menu
         pauseMenu.SetActive(true);
+        Cursor.visible = true;
 
         // Disable waypoints/score system UI
         waypoints.SetActive(false);

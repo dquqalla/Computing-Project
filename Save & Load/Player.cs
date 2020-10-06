@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
 {
     // Contains reference to relevant data of the current player i.e. their current level, saved state, current score, and list of completed stars
     public int level;
-    public int savedState;
     public int currentScore;
     public List<string> stars = new List<string>();
 

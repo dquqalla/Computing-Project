@@ -1,6 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,6 +18,8 @@ public class StartGame : MonoBehaviour
         QualitySettings.vSyncCount = 1; 
         // Activate audio listener in order to hear in-game sounds. 
         AudioListener.pause = false;
+
+        Cursor.visible = false; 
     }
 
     // Start function is initiated at the first-frame. 

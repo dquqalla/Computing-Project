@@ -18,6 +18,9 @@ public class DialogueTrigger : MonoBehaviour
         // Call functions of DialogueManager script StartDialogue() and DisableCamera(). 
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue, gameObject);
         FindObjectOfType<DialogueManager>().DisableCamera();
+
+        // Show cursor
+        Cursor.visible = true;
     }
 
     // Function called when user exits collider.
@@ -27,6 +30,9 @@ public class DialogueTrigger : MonoBehaviour
         FindObjectOfType<SpeechManager>().DisableSpeech();
         FindObjectOfType<DialogueManager>().EndDialogue();
         FindObjectOfType<DialogueManager>().EnableCamera();
+
+        // Do not show cursor
+        Cursor.visible = false;
     }
 
     // If player collides with a star...

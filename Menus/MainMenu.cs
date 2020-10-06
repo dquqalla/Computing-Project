@@ -19,6 +19,7 @@ public class MainMenu : MonoBehaviour
     {
         data = SaveSystem.LoadPlayer();
         promptAnimation.enabled = false;
+        Cursor.visible = true; 
     }
 
     // Function when user starts a new game.

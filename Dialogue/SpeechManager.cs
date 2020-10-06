@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -72,6 +72,9 @@ public class SpeechManager : MonoBehaviour
     {
         // Hide GameObject as it has been completed by user.
         triggeredStar.SetActive(false);
+
+        // Hide cursor, add star name to List array. 
+        Cursor.visible = false; 
         stars.Add(triggeredStar.name);
 
         // End dialogue, play star collect sound.

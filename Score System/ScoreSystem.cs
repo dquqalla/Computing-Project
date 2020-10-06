@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityStandardAssets.Characters.ThirdPerson;
 
 // This script implements the score system of the game. It contains functions to update the score as the user progresses throughout the level.
-// Created using help from Unity's documentation (Link: https://docs.unity3d.com/Manual/index.html) and calling functions from other scripts (PlayerData.cs, SaveSystem.cs).
+// Created using simple increment method. Learnt from use of other languages such as Java.
 public class ScoreSystem : MonoBehaviour
 {
     // Score objects
